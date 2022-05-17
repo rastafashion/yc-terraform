@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: eugene
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKvmdHlFE7eQ1S3KLLtocIIlpWR9h9QRg/SNJ9fI6Xcu ansible
+
